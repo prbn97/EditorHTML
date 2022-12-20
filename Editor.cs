@@ -54,11 +54,11 @@ namespace EditorHTML
 
     public static void HandleMenuOptions(int option)
     {
-            switch (option)
-            {
-                case 1: Editor.Show(); break;
-                case 2: Console.WriteLine("View"); break;
-                case 0: { Menu.Show(); break; }
+       switch (option)
+       {
+         case 1: {Menu.Show(); break;}
+         case 2: Editor.Show(); break;
+         case 0: Menu.Show(); break;
             }
 
         }
