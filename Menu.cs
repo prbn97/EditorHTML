@@ -50,11 +50,11 @@ namespace EditorHTML;
         Console.SetCursorPosition(7, 4);
         Console.WriteLine("Selecione uma opção abaixo:");
         Console.SetCursorPosition(8, 6);
-        Console.WriteLine("1 - Novo arquivo");
+        Console.WriteLine("1- Novo arquivo");
         Console.SetCursorPosition(8, 7);
-        Console.WriteLine("2 - Abrir");
+        Console.WriteLine("2- Abrir");
         Console.SetCursorPosition(8, 8);
-        Console.WriteLine("0 - Sair");
+        Console.WriteLine("0- Sair");
         Console.SetCursorPosition(8, 10);
         Console.Write("Opção: ");
     }
@@ -63,7 +63,7 @@ namespace EditorHTML;
     {
         switch (option)
         {
-            case 1: Console.WriteLine("Editor"); break;
+            case 1: Editor.Show(); break;
             case 2: Console.WriteLine("View"); break;
             case 0: { Console.Clear(); Environment.Exit(0); break; }
             default: Menu.Show();break;
